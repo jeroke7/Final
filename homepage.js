@@ -1,7 +1,6 @@
 const openBtn = document.getElementById('open')
 const closeBtn = document.getElementById('close')
 const nav = document.querySelector('.nav')
-const shadow = document.querySelector('.shadow')
 const angleClose = document.getElementById('0')
 const angleOpen = document.getElementById('1')
 const angle2Close = document.getElementById('2')
@@ -14,13 +13,11 @@ openBtn.addEventListener('click', () => {
     nav.style.display = 'flex'
     openBtn.style.display = 'none'
     closeBtn.style.display = 'flex'
-    shadow.style.display = 'flex'
 })
 
 closeBtn.addEventListener('click', () => {
     nav.style.display = 'none'
     openBtn.style.display = 'block'
-    shadow.style.display = 'none'
 })
 
 //small screen dropdowns 1

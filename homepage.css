@@ -1,6 +1,6 @@
 * {
     color: #1A270F;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     font-family: "Italiana", sans-serif;
     font-weight: 400;
 }
@@ -24,12 +24,8 @@ a:hover {
     cursor: pointer;
     color: rgba(0, 0, 0, 0.5);
 }
-.shadow {
-    display: none;
-}
 
 /* mobile version */
-@media (max-width: 900px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -49,11 +45,11 @@ a:hover {
         display: none;
         flex-direction: column;
         /* background: #f3f7d7; */
-        background: black;
+        background: rgba(0, 0, 0, .8);
         position: absolute;
         top: 0px; right: 0px;
         width: 50%;
-        height: 100%;
+        /* height: 100%; */
     }
     #close {
         cursor: pointer;
@@ -83,7 +79,6 @@ a:hover {
     .dropbtns {
         display: flex;
         align-items: center;
-        
     }
     .dropbtns h2 {
         padding: 10px;
@@ -94,17 +89,26 @@ a:hover {
     }
     .dropbtns .fa-angle-down {
         display: none;
+        color: #f3f7d7;
     }
-    .shadow {
-        display: none;
-        width: 50%;
-        height: 100%;
-        background: black;
-        opacity: .5;
-        position: absolute;
-        top: 0px; left: 0px;
+    .fa-angle-up {
+        color: #f3f7d7;
     }
-}
+    .nav a {
+        color: #f3f7d7;
+    }
+    .extlinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px
+    }
+    .extlinks a i {
+        color: #f3f7d7;
+        margin: 5px;
+        font-size: 30px;
+    }
 
 /* desktop version */
 @media (min-width: 900px) {
@@ -115,6 +119,7 @@ a:hover {
         /* height: 100px; */
         margin: 10px;
         padding: 10px;
+        align-items: center;
     }
     .header-left {
         width: 90%;
@@ -126,15 +131,17 @@ a:hover {
     
     .nav {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between;  */
         flex-direction: row;
         /* border: green solid 1px; */
         align-items: center;
+        background: none;
+        position: static;
     }
-    .fa-bars {
+    #open {
         display: none;
     }
-    .fa-bars-staggered {
+    #close{
         display: none;
     }
     .dropdown {
@@ -149,11 +156,15 @@ a:hover {
         margin-left: 20%;
         font-size: 20px;
         font-weight: 200;
+        color: black;
     }
     .dropbtns .fa-angle-down {
         display: none;
+        color: black;
     }
-
+    .fa-angle-up {
+        color: black;
+    }
     .dropitms, .dropitms2 {
         display: none;
         flex-direction: column;
@@ -161,10 +172,25 @@ a:hover {
     }
     .dropitms {
         position: absolute;
-        top: 120px; left: 120px;
+        top: 120px; right: 15%;
     }
     .dropitms2 {
         position: absolute;
         top:120px;  left: 120px;
+    }
+    .nav a {
+        color: black;
+    }
+    .extlinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px
+    }
+    .extlinks a i {
+        color: black;
+        margin: 5px;
+        font-size: 24px;
     }
 }
