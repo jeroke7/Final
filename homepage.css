@@ -1,5 +1,5 @@
 * {
-    color: #1A270F;
+    /* color: rgb(26, 39, 15); */
     border: 2px solid red;
     font-family: "Italiana", sans-serif;
     font-weight: 400;
@@ -22,7 +22,7 @@ a {
 }
 a:hover {
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
 }
 
 /* mobile version */
@@ -51,7 +51,7 @@ a:hover {
         width: 50%;
         /* height: 100%; */
     }
-    #close {
+    .nav:first-child {
         cursor: pointer;
         display: none;
         justify-content: right;
@@ -67,7 +67,7 @@ a:hover {
         cursor: pointer;
         font-size: 30px;
         position: absolute;
-        top: 15px; right: 15px;
+        top: 20px; right: 20px;
     }
     .dropitms, .dropitms2 {
         display: none;
@@ -85,17 +85,17 @@ a:hover {
         margin-left: 20%;
         font-size: 20px;
         /* font-weight: 200; */
-        color: #f3f7d7;
+        color: rgb(243, 247, 215);
     }
     .dropbtns .fa-angle-down {
         display: none;
-        color: #f3f7d7;
+        color: rgb(243, 247, 215);
     }
     .fa-angle-up {
-        color: #f3f7d7;
+        color: rgb(243, 247, 215);
     }
     .nav a {
-        color: #f3f7d7;
+        color: rgb(243, 247, 215);
     }
     .extlinks {
         display: flex;
@@ -105,10 +105,33 @@ a:hover {
         margin-bottom: 20px
     }
     .extlinks a i {
-        color: #f3f7d7;
+        color: rgb(243, 247, 215);
         margin: 5px;
         font-size: 30px;
     }
+
+    .hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero img {
+        width: 70%;
+        margin: 0 auto;/
+    }
+    .hero h1 {
+        position: absolute;
+        font-size: 120px;
+        color: rgba(0, 0, 0, .7);
+    }
+
+
+
+
+
+
+
 
 /* desktop version */
 @media (min-width: 900px) {
@@ -117,8 +140,8 @@ a:hover {
         justify-content: space-between;
         width: 95%;
         /* height: 100px; */
-        margin: 10px;
-        padding: 10px;
+        /* margin: 10px; */
+        /* padding: 10px; */
         align-items: center;
     }
     .header-left {
@@ -141,8 +164,10 @@ a:hover {
     #open {
         display: none;
     }
-    #close{
+    .nav:first-child{
         display: none;
+        border: blue solid 2px;
+
     }
     .dropdown {
         margin-left: 20px;
@@ -171,18 +196,18 @@ a:hover {
         position: absolute;
     }
     .dropitms {
-        position: absolute;
-        top: 120px; right: 15%;
+        /* position: absolute;
+        top: 120px; right: 28%; */
     }
     .dropitms2 {
-        position: absolute;
-        top:120px;  left: 120px;
+        /* position: absolute;
+        top:120px;  right: 15%; */
     }
     .nav a {
         color: black;
     }
     .extlinks {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -192,5 +217,12 @@ a:hover {
         color: black;
         margin: 5px;
         font-size: 24px;
+    }
+
+    .hero img {
+        width: 610px;
+    }
+    .hero h1 {
+        font-size: 140px;
     }
 }
