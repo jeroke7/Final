@@ -1,6 +1,6 @@
 * {
     /* color: rgb(26, 39, 15); */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-family: "Italiana", sans-serif;
     font-weight: 400;
 }
@@ -51,7 +51,7 @@ a:hover {
         width: 50%;
         /* height: 100%; */
     }
-    .nav:first-child {
+    #close {
         cursor: pointer;
         display: none;
         justify-content: right;
@@ -164,7 +164,7 @@ a:hover {
     #open {
         display: none;
     }
-    .nav:first-child{
+    #close{
         display: none;
         border: blue solid 2px;
 
@@ -195,14 +195,14 @@ a:hover {
         flex-direction: column;
         position: absolute;
     }
-    .dropitms {
-        /* position: absolute;
-        top: 120px; right: 28%; */
-    }
-    .dropitms2 {
-        /* position: absolute;
-        top:120px;  right: 15%; */
-    }
+    /* .dropitms {
+        position: absolute;
+        top: 120px; right: 28%; 
+    } */
+    /* .dropitms2 {
+        position: absolute;
+        top:120px;  right: 15%;
+    } */
     .nav a {
         color: black;
     }
