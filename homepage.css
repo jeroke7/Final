@@ -1,19 +1,15 @@
 * {
-    /* color: rgb(26, 39, 15); */
     /* border: 2px solid red; */
     font-family: "Italiana", sans-serif;
     font-weight: 400;
 }
 body {
-    display: flex;
-    flex-direction: column;
     background: #f3f7d7;
 }
 
 /* header section */
 .folio {
     font-size: 40px;
-    margin: 10px;
 }
 
 a {
@@ -29,73 +25,83 @@ a:hover {
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 95%;
-        height: 100px;
-        /* margin: 10px; */
-        /* padding: 10px; */
+        /* height: 100px; */
+        margin: 0 auto;
+        padding: 1rem 1rem;
+        /* border: red 2px solid; */
     }
-    .header-left {
+    /* .header-left {
         width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
     .nav {
         display: none;
         flex-direction: column;
-        /* background: #f3f7d7; */
-        background: rgba(0, 0, 0, .8);
+        /* background: rgba(0, 0, 0, .8); */
+        background: rgb(243, 247, 215);
         position: absolute;
-        top: 0px; right: 0px;
-        width: 50%;
+        top: 99px; right: 0px;
+        width: 30%;
+        padding-left: 20px;
+        padding-top: 30px;
         /* height: 100%; */
     }
     #close {
         cursor: pointer;
         display: none;
-        justify-content: right;
+        /* justify-content: right; */
         font-size: 28px;
         /* font-weight: 200; */
-        margin: 20px;
-        position: relative;
-        top: 0px; right: 0px;
-        color: #f3f7d7;
+        /* margin: 20px; */
+        /* position: relative; */
+        /* top: 0px; right: 0px; */
+        /* color: #f3f7d7; */
+        /* background-color: rgba(0, 0, 0, .8); */
+        padding: 10px;
         
     }
     #open {
+        display: block;
         cursor: pointer;
         font-size: 30px;
-        position: absolute;
-        top: 20px; right: 20px;
+        /* position: absolute;
+        top: 20px; right: 20px; */
+        padding: 10px;
     }
     .dropitms, .dropitms2 {
         display: none;
         flex-direction: column;
-        margin-left: 20%;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        /* margin-left: 20%; */
+        /* padding-bottom: 10px; */
+        /* padding-left: 10px; */
     }
     .dropbtns {
         display: flex;
         align-items: center;
     }
     .dropbtns h2 {
-        padding: 10px;
-        margin-left: 20%;
+        /* padding: 10px; */
+        /* margin-left: 20%; */
         font-size: 20px;
         /* font-weight: 200; */
-        color: rgb(243, 247, 215);
+        /* color: rgb(243, 247, 215); */
     }
     .dropbtns .fa-angle-down {
         display: none;
-        color: rgb(243, 247, 215);
+        /* color: rgb(243, 247, 215); */
+        padding-left: 5px;
     }
     .fa-angle-up {
-        color: rgb(243, 247, 215);
+        /* color: rgb(243, 247, 215); */
+        padding-left: 5px;
     }
     .nav a {
-        color: rgb(243, 247, 215);
+        color: rgb(0, 0, 0);
     }
     .extlinks {
         display: flex;
@@ -105,43 +111,40 @@ a:hover {
         margin-bottom: 20px
     }
     .extlinks a i {
-        color: rgb(243, 247, 215);
+        /* color: rgb(243, 247, 215); */
         margin: 5px;
         font-size: 30px;
     }
 
     .hero {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .hero img {
         width: 70%;
-        margin: 0 auto;/
+        height: auto;
+        margin: 0 auto;
     }
     .hero h1 {
         position: absolute;
-        font-size: 120px;
+        font-size: 64px;
         color: rgba(0, 0, 0, .7);
     }
 
 
 
-
-
-
-
-
 /* desktop version */
 @media (min-width: 900px) {
-    header {
+    /* header {
         display: flex;
         justify-content: space-between;
         width: 95%;
-        /* height: 100px; */
-        /* margin: 10px; */
-        /* padding: 10px; */
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
         align-items: center;
     }
     .header-left {
@@ -150,13 +153,13 @@ a:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
     
     .nav {
+        width: 20%;
         display: flex;
-        /* justify-content: space-between;  */
         flex-direction: row;
-        /* border: green solid 1px; */
+        justify-content: space-between; 
         align-items: center;
         background: none;
         position: static;
@@ -166,19 +169,19 @@ a:hover {
     }
     #close{
         display: none;
-        border: blue solid 2px;
+        /* border: blue solid 2px; */
 
     }
-    .dropdown {
+    /* .dropdown {
         margin-left: 20px;
-    }
+    } */
     .dropbtns {
         display: flex;
         align-items: center;
     }
     .dropbtns h2 {
-        padding: 10px;
-        margin-left: 20%;
+        padding-right: 10px;
+        /* margin-left: 20%; */
         font-size: 20px;
         font-weight: 200;
         color: black;
@@ -192,8 +195,13 @@ a:hover {
     }
     .dropitms, .dropitms2 {
         display: none;
+        width: 12%;
         flex-direction: column;
         position: absolute;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding-bottom: 10px;
+        background: rgb(243, 247, 215);
     }
     /* .dropitms {
         position: absolute;
@@ -205,6 +213,9 @@ a:hover {
     } */
     .nav a {
         color: black;
+    }
+    .projects {
+        margin-left: 20px;
     }
     .extlinks {
         display: none;

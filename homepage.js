@@ -18,6 +18,7 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     nav.style.display = 'none'
     openBtn.style.display = 'block'
+    closeBtn.style.display = 'none'
 })
 
 //small screen dropdowns 1
